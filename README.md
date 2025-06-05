@@ -1,0 +1,1 @@
+A desktop-based Personal Information Management System built with C#(Windows Forms) and MySQL.Developed for the NVQ Level 05 ICT course, This project is a system developed for entering the information of employees of the Pradeshiya Sabha.
