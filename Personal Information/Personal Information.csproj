@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{73BBCD2B-8F44-48BC-A4F4-533DE129AE80}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Personal_Information</RootNamespace>
+    <AssemblyName>Personal Information</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.5.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.30.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.30.0\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.3.8.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.3.8\lib\net462\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.3.8.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.3.8\lib\net462\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=8.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=8.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=9.3.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.9.3.0\lib\net462\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlConnector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySqlConnector.2.4.0\lib\net471\MySqlConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.8.0.0\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.8.0.1\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipelines, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZstdSharp, Version=0.8.5.0, Culture=neutral, PublicKeyToken=8d151af33a4ad5cf, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZstdSharp.Port.0.8.5\lib\net462\ZstdSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageViewer.Designer.cs">
+      <DependentUpon>ImageViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff.Designer.cs">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Department.Designer.cs">
+      <DependentUpon>Department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Role.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Role.Designer.cs">
+      <DependentUpon>Role.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Training.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Training.Designer.cs">
+      <DependentUpon>Training.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exam.Designer.cs">
+      <DependentUpon>Exam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Certificate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Certificate.Designer.cs">
+      <DependentUpon>Certificate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sample.Designer.cs">
+      <DependentUpon>sample.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageViewer.resx">
+      <DependentUpon>ImageViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff.resx">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Department.resx">
+      <DependentUpon>Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Role.resx">
+      <DependentUpon>Role.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Training.resx">
+      <DependentUpon>Training.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exam.resx">
+      <DependentUpon>Exam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Certificate.resx">
+      <DependentUpon>Certificate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="sample.resx">
+      <DependentUpon>sample.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vibrant-simple-background-with-white-space-custom-content_98100-4177.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG-20250518-WA0021-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract_background_template_for_style_design_267606.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_603500239_prjmq4c6rdtUE8JdywxRUlwWEcu8k5TD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-1696064_640.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_1199095122_cKzdqeA6EfoK4H3nK03ZAUzsGdRwiKpy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\simple-blue-curve-background-vector-business_53876-169278.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1249001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\technology-background-presentation-edit-online.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\42282747836a723b1e666d063b3dd098.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vector-design-background-blue-modern-luxury_921039-3825.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\professional-simple-corporate-square-template-background-with-empty-space-for-text-orange-and-blue-template-background-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tocpat7_02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FfG96-HXgAAXHz-.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\simple-blue-gradient-background-vector-business_53876-161578.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vector-background-with-customizable-colors-geometric-shapes_98100-3983.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FfG96-HXgAAXHz-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract_background_template_for_style_design_2676061.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vector-background-with-customizable-colors-geometric-shapes_98100-39831.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-1696064_6401.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_603500239_prjmq4c6rdtUE8JdywxRUlwWEcu8k5TD1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-vintage-and-shabby-paper-textures-high-resolution-backgrounds-image_626168.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\57d11c8bbec667f5601abfb3bb6f8277.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ea4f6d3a64c3cbce3877604bb7a4a152.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desktop-wallpaper-simple-backgrounds-for-powerpoint-presentation-red-clipartgram-background-power-point-simpel-thumbnail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purple-watercolor-background-texture-digital_199112-98.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12490011.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blog-How-Background-Checks-Work-When-Hiring-Employees-Globally.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\42282747836a723b1e666d063b3dd0981.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-vintage-and-shabby-paper-textures-high-resolution-backgrounds-image_6261681.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HD-wallpaper-adobe-creative-suite-ppt-background-for-microsoft-powerpoint-adobe-hop-hop-adobe-creative-suite-adobe-creative-cloud.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vector-background-with-customizable-colors-geometric-shapes_98100-39832.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12490012.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_542731787_npIDENXs9NMkl1mtyHKj8De2WBL2vnFW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\steel-blue-abstract-background-wallpaper-image_53876-104016.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_542731787_npIDENXs9NMkl1mtyHKj8De2WBL2vnFW1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-curve-frame-template-vector_53876-165851.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tocpat7_021.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-gradient-background-blue-blurry-background-blue-pastel-gradient-wallpaper_613001-6441.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_168204719_aWhXPHpnQGmwyZ9BSaZAdfMcvNWqle7B.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vector-background-with-customizable-colors-geometric-shapes_98100-39833.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-curve-frame-template-vector_53876-1658511.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_896346393_QKnKIR9pTAg7fPLCeY4gXmdYqj7YGV8p.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\artistic-blurry-colorful-wallpaper-background_58702-8169.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\simple-blue-gradient-background-vector-business_53876-1615781.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\watercolor-pastel-blue-ombre-background-texture-sky-blue-gradient-backdrop-photo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winter-blue-pink-gradient-background-vector_53876-117275.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

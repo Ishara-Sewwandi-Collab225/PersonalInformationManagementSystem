@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="desktop-wallpaper-simple-backgrounds-for-powerpoint-presentation-red-clipartgram-background-power-point-simpel-thumbnail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\desktop-wallpaper-simple-backgrounds-for-powerpoint-presentation-red-clipartgram-background-power-point-simpel-thumbnail.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vector-design-background-blue-modern-luxury_921039-3825" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vector-design-background-blue-modern-luxury_921039-3825.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blog-How-Background-Checks-Work-When-Hiring-Employees-Globally" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blog-How-Background-Checks-Work-When-Hiring-Employees-Globally.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="360_F_603500239_prjmq4c6rdtUE8JdywxRUlwWEcu8k5TD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\360_F_603500239_prjmq4c6rdtUE8JdywxRUlwWEcu8k5TD1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FfG96-HXgAAXHz-" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FfG96-HXgAAXHz-.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tocpat7_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tocpat7_02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="360_F_1199095122_cKzdqeA6EfoK4H3nK03ZAUzsGdRwiKpy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\360_F_1199095122_cKzdqeA6EfoK4H3nK03ZAUzsGdRwiKpy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="57d11c8bbec667f5601abfb3bb6f8277" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\57d11c8bbec667f5601abfb3bb6f8277.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="simple-blue-gradient-background-vector-business_53876-1615781" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\simple-blue-gradient-background-vector-business_53876-1615781.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="technology-background-presentation-edit-online" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\technology-background-presentation-edit-online.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-vintage-and-shabby-paper-textures-high-resolution-backgrounds-image_6261681" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-vintage-and-shabby-paper-textures-high-resolution-backgrounds-image_6261681.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="watercolor-pastel-blue-ombre-background-texture-sky-blue-gradient-backdrop-photo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\watercolor-pastel-blue-ombre-background-texture-sky-blue-gradient-backdrop-photo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HD-wallpaper-adobe-creative-suite-ppt-background-for-microsoft-powerpoint-adobe-hop-hop-adobe-creative-suite-adobe-creative-cloud" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HD-wallpaper-adobe-creative-suite-ppt-background-for-microsoft-powerpoint-adobe-hop-hop-adobe-creative-suite-adobe-creative-cloud.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background-1696064_640" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background-1696064_640.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FfG96-HXgAAXHz-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FfG96-HXgAAXHz-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blue-curve-frame-template-vector_53876-1658511" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blue-curve-frame-template-vector_53876-1658511.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="artistic-blurry-colorful-wallpaper-background_58702-8169" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\artistic-blurry-colorful-wallpaper-background_58702-8169.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background-1696064_6401" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background-1696064_6401.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="360_F_603500239_prjmq4c6rdtUE8JdywxRUlwWEcu8k5TD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\360_F_603500239_prjmq4c6rdtUE8JdywxRUlwWEcu8k5TD.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="simple-blue-gradient-background-vector-business_53876-161578" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\simple-blue-gradient-background-vector-business_53876-161578.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="42282747836a723b1e666d063b3dd0981" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\42282747836a723b1e666d063b3dd0981.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="360_F_896346393_QKnKIR9pTAg7fPLCeY4gXmdYqj7YGV8p" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\360_F_896346393_QKnKIR9pTAg7fPLCeY4gXmdYqj7YGV8p.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tocpat7_021" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tocpat7_021.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vibrant-simple-background-with-white-space-custom-content_98100-4177" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vibrant-simple-background-with-white-space-custom-content_98100-4177.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ea4f6d3a64c3cbce3877604bb7a4a152" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ea4f6d3a64c3cbce3877604bb7a4a152.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="abstract_background_template_for_style_design_2676061" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\abstract_background_template_for_style_design_2676061.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vector-background-with-customizable-colors-geometric-shapes_98100-39831" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vector-background-with-customizable-colors-geometric-shapes_98100-39831.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="purple-watercolor-background-texture-digital_199112-98" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\purple-watercolor-background-texture-digital_199112-98.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-vintage-and-shabby-paper-textures-high-resolution-backgrounds-image_626168" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-vintage-and-shabby-paper-textures-high-resolution-backgrounds-image_626168.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blue-curve-frame-template-vector_53876-165851" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blue-curve-frame-template-vector_53876-165851.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="abstract_background_template_for_style_design_267606" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\abstract_background_template_for_style_design_267606.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="12490012" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\12490012.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vector-background-with-customizable-colors-geometric-shapes_98100-39832" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vector-background-with-customizable-colors-geometric-shapes_98100-39832.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG-20250518-WA0021-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMG-20250518-WA0021-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="360_F_542731787_npIDENXs9NMkl1mtyHKj8De2WBL2vnFW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\360_F_542731787_npIDENXs9NMkl1mtyHKj8De2WBL2vnFW.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vector-background-with-customizable-colors-geometric-shapes_98100-3983" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vector-background-with-customizable-colors-geometric-shapes_98100-3983.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="12490011" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\12490011.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vector-background-with-customizable-colors-geometric-shapes_98100-39833" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vector-background-with-customizable-colors-geometric-shapes_98100-39833.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="steel-blue-abstract-background-wallpaper-image_53876-104016" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\steel-blue-abstract-background-wallpaper-image_53876-104016.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="professional-simple-corporate-square-template-background-with-empty-space-for-text-orange-and-blue-template-background-vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\professional-simple-corporate-square-template-background-with-empty-space-for-text-orange-and-blue-template-background-vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blue-gradient-background-blue-blurry-background-blue-pastel-gradient-wallpaper_613001-6441" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blue-gradient-background-blue-blurry-background-blue-pastel-gradient-wallpaper_613001-6441.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="360_F_168204719_aWhXPHpnQGmwyZ9BSaZAdfMcvNWqle7B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\360_F_168204719_aWhXPHpnQGmwyZ9BSaZAdfMcvNWqle7B.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="simple-blue-curve-background-vector-business_53876-169278" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\simple-blue-curve-background-vector-business_53876-169278.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\01.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="42282747836a723b1e666d063b3dd098" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\42282747836a723b1e666d063b3dd098.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="360_F_542731787_npIDENXs9NMkl1mtyHKj8De2WBL2vnFW1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\360_F_542731787_npIDENXs9NMkl1mtyHKj8De2WBL2vnFW1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1249001" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1249001.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="winter-blue-pink-gradient-background-vector_53876-117275" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\winter-blue-pink-gradient-background-vector_53876-117275.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
